@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CISN 71 - Lab</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #121212;
+            color: #f4f4f9;
+            position: relative;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #ffcc00;
+            margin-bottom: 20px;
+        }
+        footer {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 0.9em;
+            color: #bbbbbb;
+        }
+        .image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        .container {
+            text-align: center;
+            background: #1e1e1e;
+            padding: 40px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+            max-width: 600px;
+            margin: auto;
+            position: relative;
+            z-index: 1;
+        }
+        .container::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #0d1b2a, #1b263b, #415a77, #778da9);
+            background-size: 400% 400%;
+            animation: gradient 5s infinite;
+            border-radius: 12px;
+            z-index: -1;
+        }
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CISN 71 - Intro to Cloud Computing</h1>
+        <h2>Introduction to EC2</h2>
+        <h2>James Xu</h2>
+        <p>09/20/26</p>
+    </div>
+    <footer>Mt. San Antonio College</footer>
+</body>
+</html>
